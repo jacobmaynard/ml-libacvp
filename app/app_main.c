@@ -2680,14 +2680,11 @@ static int enable_rsa(ACVP_CTX *ctx) {
     CHECK_ENABLE_CAP_RV(rv);
     rv = acvp_cap_rsa_keygen_set_mode(ctx, ACVP_RSA_KEYGEN_B36);
     CHECK_ENABLE_CAP_RV(rv);
-    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 2048,
-                                        ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
+    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 2048, ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
     CHECK_ENABLE_CAP_RV(rv);
-    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 3072,
-                                        ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
+    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 3072, ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
     CHECK_ENABLE_CAP_RV(rv);
-    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 4096,
-                                        ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
+    rv = acvp_cap_rsa_keygen_set_primes(ctx, ACVP_RSA_KEYGEN_B36, 4096, ACVP_RSA_PRIME_TEST, ACVP_RSA_PRIME_TEST_TBLC2);
     CHECK_ENABLE_CAP_RV(rv);
 
     /* Enable siggen */
